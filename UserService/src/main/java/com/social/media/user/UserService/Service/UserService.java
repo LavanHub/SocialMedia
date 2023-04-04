@@ -2,7 +2,10 @@ package com.social.media.user.UserService.Service;
 
 import org.springframework.stereotype.Service;
 
-@Service
-public class UserService {
+import com.social.media.user.UserService.JPAEntities.User;
 
+public interface UserService {
+	
+	public User registerUser(User user);
+	
 }
